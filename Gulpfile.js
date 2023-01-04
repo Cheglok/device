@@ -9,9 +9,8 @@ const sync = function () {
   });
 };
 
-const browserReload = function (cb) {
+const browserReload = function () {
   browserSync.reload();
-  cb();
 }
 
 const watchFiles = function () {
