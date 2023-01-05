@@ -1,16 +1,18 @@
 const {watch, parallel} = require('gulp');
 const browserSync = require('browser-sync').create();
 
-const sync = function () {
+const sync = function (cb) {
   browserSync.init({
     server: {
       baseDir: './'
     }
   });
+  cb();
 };
 
-const browserReload = function () {
+const browserReload = function (cb) {
   browserSync.reload();
+  cb();
 }
 
 const watchFiles = function () {
