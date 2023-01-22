@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Gilroy"),
+    /* Если не получилось, загрузит woff2 */
+  url("./fonts/gilroyextrabold.woff2") format("woff2"),
+    /* Если браузер не поддерживает woff2, загрузит woff */
+  url("./fonts/gilroyextrabold.woff") format("woff");
+}
+
+body {
+  font-family: 'Gilroy', Arial, sans-serif;
+}
