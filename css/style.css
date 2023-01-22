@@ -26,14 +26,98 @@ body {
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
+  color: #000000;
+
+  background-color: #FFFFFF;
 }
 
 a {
   text-decoration: none;
 }
 
-ul {
+.header-logo {
+  outline: none;
+}
+
+.header-logo:hover path,
+.header-logo:focus path {
+  fill: rgba(0, 0, 0, 0.6);
+}
+
+.header-logo:active path {
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.search-form__input,
+.search-form__input::placeholder {
+  font: inherit;
+  color: rgba(0, 0, 0, 0.3);
+
+  border: none;
+  outline: none;
+}
+
+.search-form__input:hover,
+.search-form__input:focus,
+.search-form__input:hover::placeholder,
+.search-form__input:focus::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.search-form__submit {
+  color: transparent;
+
+  border: none;
+  background-color: transparent;
+}
+
+.search-form__input:focus + .search-form__submit {
+  color: #000000;
+
+  border: 1px solid black;
+}
+
+.search-form__input + .search-form__submit:hover,
+.search-form__input + .search-form__submit:focus {
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+.search-form__input + .search-form__submit:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.header-right .user-menu {
   margin: 0;
   padding: 0;
+
   list-style-type: none;
+}
+
+.header-right a {
+  color: #000000;
+}
+
+.header-right a:hover,
+.header-right a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.header-right a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-nav__page-item {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.main-nav__catalog-item {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  text-transform: none;
 }
