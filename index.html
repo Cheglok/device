@@ -83,7 +83,7 @@
   <section class="slider">
     <article class="slide">
       <h3 class="visually-hidden">Самая длинная палка для селфи</h3>
-      <img src="img/slider-1.png" alt="Большая складная палка для селфи">
+      <img src="img/slider-1.png" alt="Большая складная палка для селфи" width="384" height="486">
       <b class="slide__tagline">Делай селфи, как Бен Стиллер!</b>
       <p class="slide__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
         метров длиной и весом всего 5 килограмм.</p>
@@ -103,7 +103,7 @@
     </article>
     <article class="slide">
       <h3 class="visually-hidden">Фитнес-браслет</h3>
-      <img src="img/slider-2.png" alt="Черный фитнес браслет">
+      <img src="img/slider-2.png" alt="Черный фитнес браслет" width="345" height="485">
       <b class="slide__tagline">Худеем правильно!</b>
       <p class="slide__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия
         и соблюдать диету.</p>
@@ -119,7 +119,7 @@
     </article>
     <article class="slide">
       <h3 class="visually-hidden">Квадрокоптер с лазером</h3>
-      <img src="img/slider-3.png" alt="Черно-белый квадрокоптер с подвесным лазером">
+      <img src="img/slider-3.png" alt="Черно-белый квадрокоптер с подвесным лазером" width="526" height="334">
       <b class="slide__tagline">Порхает как бабочка, жалит как пчела!</b>
       <p class="slide__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
         замаскированным под стандартную камеру.</p>
@@ -160,25 +160,31 @@
   </section>
   <section class="services">
     <ul class="services__list">
-      <li class="services__item">Доставка</li>
-      <li class="services__item">Гарантия</li>
-      <li class="services__item">Кредит</li>
+      <li class="services__item services__item-current">
+        <button type="button" aria-labelledby="services-delivery">Доставка</button>
+      </li>
+      <li class="services__item">
+        <button type="button" aria-labelledby="services-guarantee">Гарантия</button>
+      </li>
+      <li class="services__item">
+        <button type="button" aria-labelledby="services-credit">Кредит</button>
+      </li>
     </ul>
     <ul class="services-slider">
       <li class="services-slider-item delivery-slider">
         <h3><a href="">Доставка</a></h3>
-        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+        <p id="services-delivery">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
           заработаем,
           поднимая его на ваш этаж!</p>
       </li>
       <li class="services-slider-item guarantee-slider">
         <h3><a href="">Гарантия</a></h3>
-        <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+        <p id="services-guarantee">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
           Товар, не дом, конечно же.</p>
       </li>
       <li class="services-slider-item credit-slider">
         <h3><a href="">Кредит</a></h3>
-        <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
+        <p id="services-credit">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
           условия кредита. Выгодные для нашего банка, разумеется.</p>
       </li>
     </ul>
@@ -186,16 +192,16 @@
   <section class="popular-brands">
     <ul class="popular-brands__list">
       <li class="popular-brands__item">
-        <a href=""><img src="img/logo-1.jpg" alt="dji"></a>
+        <a class="popular-brands__link" href=""><img src="img/logo-1.jpg" alt="dji" width="260" height="100"></a>
       </li>
       <li class="popular-brands__item">
-        <a href=""><img src="img/logo-2.jpg" alt="SP Gadgets"></a>
+        <a class="popular-brands__link" href=""><img src="img/logo-2.jpg" alt="SP Gadgets" width="260" height="100"></a>
       </li>
       <li class="popular-brands__item">
-        <a href=""><img src="img/logo-3.jpg" alt="GoPro"></a>
+        <a class="popular-brands__link" href=""><img src="img/logo-3.jpg" alt="GoPro" width="260" height="100"></a>
       </li>
       <li class="popular-brands__item">
-        <a href=""><img src="img/logo-4.jpg" alt="Vive"></a>
+        <a class="popular-brands__link" href=""><img src="img/logo-4.jpg" alt="Vive" width="260" height="100"></a>
       </li>
     </ul>
   </section>
@@ -216,9 +222,9 @@
     <p class="contacts__description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
       работоспособность покупки. Всякое бывает.</p>
     <a href="">
-      <img src="img/map.jpg" alt="Карта с адресом Улица Строителей, 15">
+      <img src="img/map.jpg" alt="Карта с адресом Улица Строителей, 15" width="560" height="222">
     </a>
-    <a href="">Напишите нам</a>
+    <a href="" class="about__details-link">Напишите нам</a>
   </section>
 </main>
 <footer class="main-footer">
@@ -259,7 +265,7 @@
   </div>
   <div class="main-footer__right">
     <div class="main-footer__right-top">
-      <ul class="user-menu">
+      <ul class="main-footer__user-menu">
         <li>
           <a href="">Войти</a>
         </li>
@@ -274,7 +280,8 @@
       <a href="" class="cart">Корзинa</a>
     </div>
     <a class="main-footer__phone" href="tel:+74954959595">Тел.:+7(495)495-95-95</a>
-    <a href="https://htmlacademy.ru" class="main-footer__copyright">HTMLAcademy</a>
+    <a class="main-footer__copyright" href="https://htmlacademy.ru">HTMLAcademy
+    </a>
   </div>
 </footer>
 <section class="modal-contact">
@@ -296,7 +303,7 @@
   </form>
 </section>
 <section class="map">
-  <img src="img/map-big.jpg" alt="Карта, адрес Улица Строителей, 15">
+  <img src="img/map-big.jpg" alt="Карта, адрес Улица Строителей, 15" width="960" height="559">
 </section>
 </body>
 </html>
