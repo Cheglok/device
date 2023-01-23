@@ -45,6 +45,9 @@ a {
   text-decoration: none;
 }
 
+.main-header {
+  background-color: #f7e296;
+}
 .header-logo {
   outline: none;
 }
@@ -104,16 +107,42 @@ a {
   list-style-type: none;
 }
 
-.header-right a {
+.user-menu a {
   color: #000000;
 }
 
-.header-right a:hover,
-.header-right a:focus {
-  opacity: 0.6;;
+.user-menu a:hover,
+.user-menu a:focus {
+  opacity: 0.6;
 }
 
-.header-right a:active {
+.user-menu a:active {
+  opacity: 0.3;
+}
+
+.compare {
+  color: #000000;
+}
+
+.compare:hover,
+.compare:focus {
+  opacity: 0.6;
+}
+
+.compare:active {
+  opacity: 0.3;
+}
+
+.cart {
+  color: #000000;
+}
+
+.cart:hover,
+.cart:focus {
+  opacity: 0.6;
+}
+
+.cart:active {
   opacity: 0.3;
 }
 
@@ -162,7 +191,7 @@ a {
   text-transform: none;
 }
 
-.slide__details {
+.button {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -170,7 +199,7 @@ a {
   color: #000000;
 }
 
-.slide__details:active {
+.button:active {
   opacity: 0.3;
 }
 
@@ -210,23 +239,21 @@ a {
 
 /*services*/
 
+.services {
+  background-color: #e5e5e5;
+}
+
 .services__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.services__item button {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 800;
-
-  border: none;
-}
-
-.services__item button:active {
+.services__item button:active,
+.services__item-current button{
   color: #f7e184;
+  background-color: #000000;
+  opacity: 1;
 }
 
 .services-slider {
@@ -280,11 +307,12 @@ a {
   list-style-type: circle;
 }
 
-.about__details-link:active {
-  opacity: 0.3;
-}
-
 /*main-footer*/
+
+.main-footer {
+  color: #ffffff;
+  background-color: #464646;
+}
 
 .main-footer__logo:hover,
 .main-footer__logo:focus {
@@ -295,57 +323,12 @@ a {
   opacity: 0.3;
 }
 
-.main-footer__services-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.main-footer__services-item a {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 40px;
-  font-weight: 800;
-  color: #ffffff;
-}
-
-.main-footer__services-item a:hover,
-.main-footer__services-item a:focus {
-  opacity: 0.6;
-}
-
-.main-footer__services-item a:active {
-  opacity: 0.3;
-}
-
-.main-footer__social-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.main-footer__social-item a {
-  background-color: #cccccc;
-  opacity: 0.3;
-}
-
-.main-footer__social-item a:hover,
-.main-footer__social-item a:focus {
-  opacity: 0.6;
-}
-
-.main-footer__social-item a:active {
-  opacity: 0.1;
-}
-
 .main-footer__user-menu {
-  margin: 0;
-  padding: 0;
   list-style-type: none;
 }
 
 .main-footer__user-menu a {
-  color: #ffffff;
+  color: inherit;
   opacity: 0.7;
 }
 
@@ -356,6 +339,79 @@ a {
 
 .main-footer__user-menu a:active {
   opacity: 0.3;
+}
+
+.main-footer__compare,
+.main-footer__cart {
+  color: inherit;
+  opacity: 0.7;
+}
+
+.main-footer__compare:hover,
+.main-footer__compare:focus,
+.main-footer__cart:hover,
+.main-footer__cart:focus{
+  opacity: 1;
+}
+
+.main-footer__compare:active,
+.main-footer__cart:active {
+  opacity: 0.3;
+}
+
+
+.main-footer__services-list {
+  list-style-type: none;
+}
+
+.main-footer__services-list a {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 800;
+  color: inherit;
+}
+
+.main-footer__services-list a:hover,
+.main-footer__services-list a:focus {
+  opacity: 0.6;
+}
+
+.main-footer__services-item a:active {
+  opacity: 0.3;
+}
+
+.main-footer__phone {
+  color: inherit;
+}
+
+.main-footer__phone:hover,
+.main-footer__phone:focus {
+  opacity: 0.6;
+}
+
+.main-footer__phone:active {
+  opacity: 0.3;
+}
+
+.main-footer__social-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.main-footer__social-list a {
+  background-color: #cccccc;
+  opacity: 0.3;
+}
+
+.main-footer__social-list a:hover,
+.main-footer__social-list a:focus {
+  opacity: 0.6;
+}
+
+.main-footer__social-list a:active {
+  opacity: 0.1;
 }
 
 /*modal-contact*/
@@ -416,6 +472,10 @@ a {
 
 /*filter*/
 
+.filter {
+  background-color: #dcdcdc;
+}
+
 .filter__heading {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
@@ -423,6 +483,7 @@ a {
   font-weight: 800;
 
   text-transform: uppercase;
+  background-color: #efefef;
 }
 
 .filter-form__fieldset {
@@ -452,7 +513,135 @@ a {
   list-style-type: none;
 }
 
-.filter__colors-option {
+.filter__bluetooth-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.filter__option {
   font-size: 14px;
   line-height: 40px;
 }
+
+.filter-form__input:disabled + label {
+  color: #a6a6a6;
+}
+
+/*sorting*/
+
+.goods__sorting {
+  background-color: #ebebeb;
+}
+
+.goods__sorting-list,
+.goods__sorting-order-list {
+  list-style-type: none;
+}
+
+.goods__sorting-heading {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.goods__sorting-item a {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: inherit;
+  opacity: 0.3;
+}
+
+.goods__sorting-item a:hover,
+.goods__sorting-item a:focus {
+  opacity: 0.6;
+}
+
+.goods__sorting-item a:active {
+  opacity: 1;
+}
+
+.goods__sorting-item_current a {
+  opacity: 1;
+}
+
+.goods__sorting-order-item {
+  opacity: 0.2;
+}
+
+.goods__sorting-order-item_active {
+  opacity: 1;
+}
+
+.goods__sorting-order-item a:hover,
+.goods__sorting-order-item a:focus {
+  opacity: 0.6;
+}
+
+.goods__sorting-order-item a:active {
+  opacity: 1;
+}
+
+/*goods*/
+
+.goods__goods-list {
+  list-style-type: none;
+}
+
+.goods__good-name {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+}
+
+.goods__good-price {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+.goods__pagination {
+  list-style-type: none;
+  background-color: #ebebeb;
+}
+
+.goods__pagination a {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.goods__page-ends:hover,
+.goods__page-ends:focus {
+  background-color: #d9d9d9;
+}
+
+.goods__page-ends:active {
+  opacity: 0.3;
+}
+
+.goods__page-number {
+  opacity: 0.3;
+}
+
+.goods__page-number:hover,
+.goods__page-number:focus {
+  opacity: 0.6;
+}
+
+.goods__page-number:active {
+  opacity: 1;
+}
+
+.goods__page-number_current {
+  opacity: 1;
+}
+
