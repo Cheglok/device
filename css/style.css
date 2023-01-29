@@ -646,7 +646,12 @@ a {
 
 /*monopods-page*/
 
+.catalog-page {
+  padding-top: 40px;
+}
+
 .catalog-page__heading {
+  margin: 0 0 30px;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   line-height: 48px;
@@ -655,7 +660,7 @@ a {
 
 .catalog-page__breadcrumbs {
   display: flex;
-  margin: 0;
+  margin: 0 0 45px;
   padding: 0;
   list-style: none;
 }
@@ -688,6 +693,7 @@ a {
 }
 
 .filter__heading {
+  margin: 0;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
