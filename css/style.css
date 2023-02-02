@@ -26,6 +26,15 @@ html {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
 .content-box-component {
   box-sizing: content-box;
 }
@@ -51,10 +60,6 @@ body {
   color: #000000;
 
   background-color: #ffffff;
-}
-
-a {
-  text-decoration: none;
 }
 
 .container {
