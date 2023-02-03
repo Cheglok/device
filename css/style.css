@@ -305,7 +305,7 @@ body {
 .main-nav_catalog-list {
   position: absolute;
 
-  display: flex;
+  display: none;
   justify-content: space-between;
   flex-wrap: wrap;
 
@@ -315,6 +315,10 @@ body {
 
   list-style-type: none;
   background-color: #f7e296;
+}
+
+.main-nav__page-item_catalog:hover .main-nav_catalog-list {
+  display: flex;
 }
 
 .main-nav__catalog-item_pusher {
