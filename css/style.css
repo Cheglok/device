@@ -351,6 +351,33 @@ body {
 .slide {
   display: flex;
   justify-content: space-between;
+
+  position: relative;
+
+  background-image: linear-gradient(180deg, #f7e296 0%, #f7e296 23%, #ffffff 23%, #ffffff 100%);
+}
+
+.slide-1 {
+  display: flex;
+}
+
+.slide-2 {
+  display: none;
+}
+
+.slide-3 {
+  display: none;
+}
+
+.slide__number {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  font-size: 179px;
+  line-height: 179px;
+  font-weight: 800;
+  color: #ffffff;
 }
 
 .slide__left-wrapper {
@@ -362,10 +389,24 @@ body {
 }
 
 .slide__right-wrapper {
+  position: relative;
+
   width: 580px;
   padding: 120px 20px 0;
 }
 
+.slide__right-wrapper::before {
+  content: "";
+
+  position: absolute;
+  top: 35px;
+  left: 20px;
+
+  width: 100px;
+  height: 7px;
+
+  background-color: #ffffff;
+}
 
 .slide__tagline {
   font-family: "Gilroy", Arial, sans-serif;
@@ -386,6 +427,8 @@ body {
   text-transform: uppercase;
 
   border: none;
+
+  background-image: linear-gradient(180deg, #ffffff 0%, #ffffff 40%, #f0c52e 40%, #f0c52e 60%, #ffffff 60%, #ffffff 100%);
 }
 
 .button:active {
@@ -393,16 +436,22 @@ body {
 }
 
 .slide__properties td {
+  padding-right: 80px;
+
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 36px;
   line-height: 48px;
   font-weight: 300;
+  text-align: left;
 }
 
 .slide__properties th {
+  padding-right: 80px;
+
   font-size: 13px;
   line-height: 20px;
   font-weight: inherit;
+  text-align: left;
 }
 
 /*promo-catalog*/
